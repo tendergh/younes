@@ -1,0 +1,307 @@
+    <!DOCTYPE html>
+    <html lang="fr" class="scroll-smooth">
+    <head>
+      <meta charset="UTF-8">
+      <link rel="icon" type="image/png" href="https://tendergh.github.io/younes/favicon.png">
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="https://tendergh.github.io/younes">
+      <meta property="og:title" content="Tender">
+      <meta property="og:description" content="ce site est genérer par tender">
+      <meta property="og:image" content="https://tendergh.github.io/younes/images/open_graph.webp">
+    
+      <meta name="title" content="Tender">
+      <meta name="description" content="ce site est genérer par tender">
+      <link rel="canonical" href="https://tendergh.github.io/younes/" />
+      <meta name="robots" content="index, follow">
+      <meta name="keywords" content="ecommerce, tender">
+      <meta name="author" content="Tender">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <meta name="tel" content="641550703">
+    <meta name="address" content="Golden Gate BridgeSan Francisco, CA 94129">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/balkhirihamid/public/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/gh/balkhirihamid/public/srcipt.js"></script>
+  
+      <style> @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap'); * { font-family: 'Inter', sans-serif; } .gradient-bg { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); } .hero-gradient { background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #8b5cf6 100%); } .glass-effect { backdrop-filter: blur(10px); background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.2); } .hover-scale { transition: transform 0.3s ease, box-shadow 0.3s ease; } .hover-scale:hover { transform: translateY(-5px) scale(1.02); box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); } .fade-in { opacity: 0; transform: translateY(30px); transition: all 0.8s ease; } .fade-in.visible { opacity: 1; transform: translateY(0); } .slide-in-left { opacity: 0; transform: translateX(-50px); transition: all 0.8s ease; } .slide-in-left.visible { opacity: 1; transform: translateX(0); } .slide-in-right { opacity: 0; transform: translateX(50px); transition: all 0.8s ease; } .slide-in-right.visible { opacity: 1; transform: translateX(0); } .pulse-glow { animation: pulseGlow 2s infinite; } @keyframes pulseGlow { 0%, 100% { box-shadow: 0 0 20px rgba(59, 130, 246, 0.5); } 50% { box-shadow: 0 0 40px rgba(59, 130, 246, 0.8); } } .floating { animation: floating 3s ease-in-out infinite; } @keyframes floating { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-10px); } } </style>
+      <title>Tender</title>
+    </head>
+    
+    
+    <body class="font-sans text-gray-900 overflow-x-hidden">
+      <!-- Navigation -->
+      <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden transition-opacity duration-300"></div>
+      <nav class="fixed top-0 w-full z-50 glass-effect transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div class="flex justify-between items-center h-16">
+            <div class="hidden md:flex items-center">
+              <div class="flex-shrink-0">
+                <h1 class="text-2xl font-bold text-white">Tender</h1>
+              </div>
+            </div>
+            <div class="hidden md:block">
+              <div class="ml-10 flex items-baseline space-x-8">
+                <a href="https://tendergh.github.io/younes" class="text-white hover:text-accent transition-colors duration-300">Accueil</a>
+                <a href="https://tendergh.github.io/younes/product" class="text-white hover:text-accent transition-colors duration-300">Product</a>
+                <a href="https://tendergh.github.io/younes/contact" class="text-white hover:text-accent transition-colors duration-300">Contact</a>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <button id="bagToggle" type="button" class="notif relative rounded-full p-1 text-white cursor-pointer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16"> <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/> </svg>
+              </button>
+              <h1 class="md:hidden text-2xl font-bold text-white">Tender</h1>
+            </div>
+            <div class="flex items-center gap-3 md:hidden">
+              <button class="text-white hover:text-accent" id="mobile-menu-button">
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="md:hidden hidden" id="mobile-menu">
+          <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-dark bg-opacity-90">
+            <a href="https://tendergh.github.io/younes" class="text-white block px-3 py-2 rounded-md hover:text-accent">Accueil</a>
+            <a href="https://tendergh.github.io/younes/product" class="text-white block px-3 py-2 rounded-md hover:text-accent">Product</a>
+            <a href="https://tendergh.github.io/younes/contact" class="text-white block px-3 py-2 rounded-md hover:text-accent">Contact</a>
+          </div>
+        </div>
+      </nav>
+      <!--<section class="relative w-full h-screen overflow-hidden"><div id="carousel" class="relative w-full h-full">-->
+      
+    <!-- Hero Section -->
+  <section class="hero-gradient text-white pt-16">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-20">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div class="slide-in-left">
+          <h1 class="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+            Discover Premium
+            <span class="text-yellow-400">Products</span>
+            Online
+          </h1>
+          <p class="text-xl mb-8 text-blue-100 leading-relaxed">
+            Shop the latest trends with unbeatable prices, fast shipping, and exceptional customer service. Your
+            satisfaction is our priority.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="https://tendergh.github.io/younes/product"
+              class="bg-yellow-400 text-gray-900 px-8 py-4 rounded-lg font-semibold hover:bg-yellow-300 transition-all duration-300 pulse-glow hover-scale">
+              Shop Now
+            </a>
+            <a href="https://tendergh.github.io/younes/product"
+              class="glass-effect px-8 py-4 rounded-lg font-semibold hover:bg-white hover:bg-opacity-20 transition-all duration-300">
+              Learn More
+            </a>
+          </div>
+        </div>
+        <div class="slide-in-right relative">
+          <div class="floating">
+            <div class="bg-white rounded-3xl p-8 shadow-2xl">
+              <img src="https://tendergh.github.io/younes/images/1758809023621.webp"
+                alt="Premium Products" class="w-full h-64 object-cover rounded-xl mb-4">
+              <div class="text-gray-800">
+                <h3 class="text-xl font-semibold mb-2">Premium Collection</h3>
+                <p class="text-gray-600 mb-4">Curated selection of high-quality products</p>
+                <div class="flex items-center justify-between">
+                  <span class="text-2xl font-bold text-blue-600">1500.0 MAD</span>
+                  <a href="https://tendergh.github.io/younes/product/knight.html"
+                    class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors duration-200">
+                    Add to Cart
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-20 bg-white">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-16 fade-in">
+        <h2 class="text-4xl font-bold text-gray-800 mb-4">Why Choose Tender?</h2>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">Experience the difference with our premium shopping platform
+          designed for the modern American consumer</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center p-8 rounded-xl hover-scale fade-in bg-gradient-to-br from-blue-50 to-indigo-100">
+          <div class="bg-blue-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-4 text-gray-800">Fast Shipping</h3>
+          <p class="text-gray-600">Free 2-day shipping on orders over $50. Express delivery available nationwide.</p>
+        </div>
+
+        <div class="text-center p-8 rounded-xl hover-scale fade-in bg-gradient-to-br from-purple-50 to-pink-100"
+          style="animation-delay: 0.2s;">
+          <div class="bg-purple-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-4 text-gray-800">Quality Guarantee</h3>
+          <p class="text-gray-600">30-day money-back guarantee on all products. Quality you can trust.</p>
+        </div>
+
+        <div class="text-center p-8 rounded-xl hover-scale fade-in bg-gradient-to-br from-green-50 to-emerald-100"
+          style="animation-delay: 0.4s;">
+          <div class="bg-green-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M12 2.5V9m0 6v6.5" />
+            </svg>
+          </div>
+          <h3 class="text-xl font-semibold mb-4 text-gray-800">24/7 Support</h3>
+          <p class="text-gray-600">Round-the-clock customer support via chat, email, and phone.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="py-20 bg-gray-50">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16 fade-in">
+      <h2 class="text-4xl font-bold text-gray-800 mb-4">Featured Products</h2>
+      <p class="text-xl text-gray-600">Handpicked selections from our premium collection</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8"><div class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale fade-in" style="animation-delay: 0.0s;">
+          <img src="https://tendergh.github.io/younes/images/1758291366030.webp"
+            alt="skyhawk HDD 4To" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="font-semibold text-lg mb-2">null</h3>
+            <p class="text-gray-600 mb-4">Built for video DVR and NVR security camera systems, SkyHawk...</p>
+            <div class="flex items-center justify-between">
+              <span class="font-bold text-blue-600">1200.0 MAD</span>
+              <a href="https://tendergh.github.io/younes/product/sky4.html"
+                class="bg-blue-600 text-white p-2 rounded-lg hover:bg-blue-700 transition-colors duration-200">
+                Add to Cart
+              </a>
+            </div>
+          </div>
+        </div><div class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale fade-in" style="animation-delay: 0.1s;">
+          <img src="https://tendergh.github.io/younes/images/1755276817621.webp"
+            alt="Cell Go full color" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="font-semibold text-lg mb-2">Etanche</h3>
+            <p class="text-gray-600 mb-4">Avec son objectif de 3 Mégapixels, la Cell Go Full...</p>
+            <div class="flex items-center justify-between">
+              <span class="font-bold text-blue-600">1600.0 MAD</span>
+              <a href="https://tendergh.github.io/younes/product/cell_go.html"
+                class="bg-blue-600 text-white p-2 rounded-lg hover:bg-blue-700 transition-colors duration-200">
+                Add to Cart
+              </a>
+            </div>
+          </div>
+        </div><div class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale fade-in" style="animation-delay: 0.2s;">
+          <img src="https://tendergh.github.io/younes/images/1756515994920.webp"
+            alt="Cruiser Dual" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="font-semibold text-lg mb-2">Extérieur</h3>
+            <p class="text-gray-600 mb-4">5+5MP Camera | Smart Full-color Night Vision | Wide View...</p>
+            <div class="flex items-center justify-between">
+              <span class="font-bold text-blue-600">1200.0 MAD</span>
+              <a href="https://tendergh.github.io/younes/product/Cruiser_Dual.html"
+                class="bg-blue-600 text-white p-2 rounded-lg hover:bg-blue-700 transition-colors duration-200">
+                Add to Cart
+              </a>
+            </div>
+          </div>
+        </div><div class="bg-white rounded-xl shadow-lg overflow-hidden hover-scale fade-in" style="animation-delay: 0.3s;">
+          <img src="https://tendergh.github.io/younes/images/1756894941896.webp"
+            alt="Ranger RC" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="font-semibold text-lg mb-2">Maison</h3>
+            <p class="text-gray-600 mb-4">Panoramic Pan & Tilt | 2K QHD Image | Smart...</p>
+            <div class="flex items-center justify-between">
+              <span class="font-bold text-blue-600">450.0 MAD</span>
+              <a href="https://tendergh.github.io/younes/product/ranger_rc.html"
+                class="bg-blue-600 text-white p-2 rounded-lg hover:bg-blue-700 transition-colors duration-200">
+                Add to Cart
+              </a>
+            </div>
+          </div>
+        </div>  </div>
+      <div class="text-center mt-12 fade-in">
+        <a href="https://tendergh.github.io/younes/product"
+          class="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-all duration-300 hover-scale">
+          View All Products
+        </a>
+      </div>
+    </div>
+  </section><!-- Newsletter Section -->
+  <section class="gradient-bg text-white py-20">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="fade-in">
+        <h2 class="text-4xl font-bold mb-4">Stay Updated</h2>
+        <p class="text-xl mb-8 text-purple-100">Get the latest deals and product updates delivered to your inbox</p>
+
+        <div class="max-w-md mx-auto">
+          <div class="flex gap-4 flex-wrap">
+            <input type="email" placeholder="Enter your email"
+              class="flex-1 px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-yellow-400">
+            <button
+              class="bg-yellow-400 text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors duration-200">
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+      <footer class="bg-gray-900 text-white py-16">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-8">
+        <div>
+          <div class="text-2xl font-bold text-blue-400 mb-4">Tender</div>
+          <p class="text-gray-400 mb-4">Your trusted online shopping destination for premium products and exceptional
+            service.</p>
+          <div class="flex gap-2">
+            
+          </div>
+        </div>
+
+        <div>
+          <h3 class="font-semibold text-lg mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li><a href="https://tendergh.github.io/younes" class="text-gray-400 hover:text-white transition-colors duration-200">Home</a></li>
+            <li><a href="https://tendergh.github.io/younes/product" class="text-gray-400 hover:text-white transition-colors duration-200">Products</a></li>
+            <li><a href="https://tendergh.github.io/younes/contact" class="text-gray-400 hover:text-white transition-colors duration-200">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-semibold text-lg mb-4">Customer Service</h3>
+          <ul class="space-y-2">
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Contact Us</a></li>
+            <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-200">Shipping Info</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-semibold text-lg mb-4">Contact Info</h3>
+          <div class="flex flex-col space-y-2 text-gray-400">
+            <p>Golden Gate BridgeSan Francisco, CA 94129</p>
+            <a href='tel:641550703'>Phone: 641550703</a>
+            <a href='mailto:sass@tender.com'>Email: sass@tender.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="border-t border-gray-800 mt-8 pt-8 text-center">
+        <p class="text-gray-400">© 2025 Tender. All rights reserved. | Privacy Policy | Terms of Service</p>
+      </div>
+    </div>
+  </footer>
+  <script> const observerOptions0 = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }; const observer0 = new IntersectionObserver(function (entries) { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('visible'); } }); }, observerOptions0); document.addEventListener('DOMContentLoaded', function () { const animatedElements = document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right'); animatedElements.forEach(el => observer0.observe(el)); }); window.addEventListener('load', function () { setTimeout(() => { document.querySelectorAll('.slide-in-left, .slide-in-right').forEach((el, index) => { setTimeout(() => { el.classList.add('visible'); }, index * 200); }); }, 300); }); </script></body></html>
