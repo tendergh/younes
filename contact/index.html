@@ -1,0 +1,248 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" type="image/png" href="https://tendergh.github.io/younes/favicon.png">
+      <meta property="og:type" content="website">
+      <meta property="og:url" content="https://tendergh.github.io/younes">
+      <meta property="og:title" content="Contact">
+      <meta property="og:description" content="site web ecommerce spécialisé au dommaine informatique">
+      <meta property="og:image" content="https://tendergh.github.io/younes/images/open_graph.webp">
+    
+      <meta name="title" content="Contact">
+      <meta name="description" content="contact page">
+      <link rel="canonical" href="https://tendergh.github.io/younes/contact/" />
+      <meta name="robots" content="index, follow">
+      <meta name="author" content="Tender">
+          <meta name="tel" content="641550703">
+    <meta name="address" content="Golden Gate BridgeSan Francisco, CA 94129">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/balkhirihamid/public/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/gh/balkhirihamid/public/srcipt.js"></script>
+  
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.min.js"></script>
+      <style> @keyframes blob { 0% { transform: translate(0px, 0px) scale(1); } 33% { transform: translate(30px, -50px) scale(1.1); } 66% { transform: translate(-20px, 20px) scale(0.9); } 100% { transform: translate(0px, 0px) scale(1); } } .animate-blob { animation: blob 7s infinite; } .animation-delay-2000 { animation-delay: 2s; } .animation-delay-4000 { animation-delay: 4s; } </style>
+      <title>Tender-Contact</title>
+    </head>
+    <body class="bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 min-h-screen">
+  <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 z-40 hidden transition-opacity duration-300"></div>
+  <nav class="fixed top-0 w-full z-50 glass-effect transition-all duration-300" id="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+        <div class="hidden md:flex items-center">
+          <div class="flex-shrink-0">
+            <h1 class="text-2xl font-bold text-white">Tender</h1>
+          </div>
+        </div>
+        <div class="hidden md:block">
+          <div class="ml-10 flex items-baseline space-x-8">
+            <a href="https://tendergh.github.io/younes" class="text-white hover:text-accent transition-colors duration-300">Accueil</a>
+            <a href="https://tendergh.github.io/younes/product" class="text-white hover:text-accent transition-colors duration-300">Product</a>
+            <a href="https://tendergh.github.io/younes/contact" class="text-white hover:text-accent transition-colors duration-300">Contact</a>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <button id="bagToggle" type="button" class="notif relative rounded-full p-1 text-white cursor-pointer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-bag"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+            </svg>
+          </button>
+          <h1 class="md:hidden text-2xl font-bold text-white">Tender</h1>
+        </div>
+        <div class="flex items-center gap-3 md:hidden">
+          <button class="text-white hover:text-accent" id="mobile-menu-button">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- Mobile menu -->
+    <div class="md:hidden hidden" id="mobile-menu">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-dark bg-opacity-90">
+        <a href="https://tendergh.github.io/younes"
+          class="text-white block px-3 py-2 rounded-md hover:text-accent">Accueil</a>
+        <a href="https://tendergh.github.io/younes/product"
+          class="text-white block px-3 py-2 rounded-md hover:text-accent">Product</a>
+        <a href="https://tendergh.github.io/younes/contact" class="text-white block px-3 py-2 rounded-md hover:text-accent">Contact</a>
+      </div>
+    </div>
+  </nav>
+  <div class="relative z-10 min-h-screen flex items-center justify-center px-4 py-12">
+    <div class="max-w-4xl w-full">
+      <!-- Header -->
+      <div class="text-center my-12">
+        <h1 class="text-5xl md:text-6xl font-bold text-white mb-4 tracking-tight">
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">Contact Us</span>
+        </h1>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Contact Form -->
+        <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20 shadow-2xl">
+          <h2 class="text-2xl font-bold text-white mb-6">Send a Message</h2>
+
+          <form class="space-y-6" id="contactForm">
+            <div class="grid md:grid-cols-2 gap-4">
+              <div>
+                <label class="block text-sm font-medium text-gray-300 mb-2">First Name</label>
+                <input type="text" name="firstName" required
+                  class="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
+                  placeholder="John">
+              </div>
+              <div>
+                <label class="block text-sm font-medium text-gray-300 mb-2">Last Name</label>
+                <input type="text" name="lastName" required
+                  class="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
+                  placeholder="Doe">
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-gray-300 mb-2">Email Address</label>
+              <input type="email" name="email" required
+                class="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
+                placeholder="john@example.com">
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-gray-300 mb-2">Subject</label>
+              <input type="text" name="subject" required
+                class="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
+                placeholder="Project Inquiry">
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-gray-300 mb-2">Message</label>
+              <textarea name="message" rows="5" required
+                class="w-full px-4 py-3 bg-white/5 border border-white/20 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300 resize-none"
+                placeholder="Tell me about your project..."></textarea>
+            </div>
+
+            <button type="submit"
+              class="w-full bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold py-4 px-6 rounded-lg hover:from-blue-700 hover:to-purple-700 focus:outline-none focus:ring-4 focus:ring-blue-500/50 transform hover:scale-105 transition-all duration-300 shadow-lg">
+              <span class="flex items-center justify-center space-x-2">
+                <span>Send Message</span>
+                <i data-feather="send" class="w-5 h-5"></i>
+              </span>
+            </button>
+          </form>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="space-y-8">
+          <!-- Contact Cards -->
+          <div
+            class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 shadow-2xl hover:transform hover:scale-105 transition-all duration-300">
+            <div class="flex items-center space-x-4">
+              <div class="bg-gradient-to-r from-blue-500 to-purple-500 p-3 rounded-lg">
+                <i data-feather="mail" class="w-6 h-6 text-white"></i>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold text-white">Email</h3>
+                <p class="text-gray-300">sass@tender.com</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 shadow-2xl hover:transform hover:scale-105 transition-all duration-300">
+            <div class="flex items-center space-x-4">
+              <div class="bg-gradient-to-r from-green-500 to-blue-500 p-3 rounded-lg">
+                <i data-feather="phone" class="w-6 h-6 text-white"></i>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold text-white">Phone</h3>
+                <p class="text-gray-300">641550703</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 shadow-2xl hover:transform hover:scale-105 transition-all duration-300">
+            <div class="flex items-center space-x-4">
+              <div class="bg-gradient-to-r from-purple-500 to-pink-500 p-3 rounded-lg">
+                <i data-feather="map-pin" class="w-6 h-6 text-white"></i>
+              </div>
+              <div>
+                <h3 class="text-lg font-semibold text-white">Location</h3>
+                <p class="text-gray-300">Golden Gate BridgeSan Francisco, CA 94129</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 shadow-2xl">
+            <h3 class="text-lg font-semibold text-white mb-4">Connect With Me</h3>
+            <div class="flex space-x-4">
+              <a target='_blank' href="#"
+                class="bg-gradient-to-r from-blue-600 to-blue-700 p-3 rounded-lg hover:from-blue-700 hover:to-blue-800 transition-all duration-300 transform hover:scale-110">
+                <i data-feather="linkedin" class="w-5 h-5 text-white"></i>
+              </a>
+              <a target='_blank' href="https://github.com/tendergh/"
+                class="bg-gradient-to-r from-gray-700 to-gray-800 p-3 rounded-lg hover:from-gray-800 hover:to-gray-900 transition-all duration-300 transform hover:scale-110">
+                <i data-feather="github" class="w-5 h-5 text-white"></i>
+              </a>
+              <a target='_blank' href="#"
+                class="bg-gradient-to-r from-blue-500 to-blue-600 p-3 rounded-lg hover:from-blue-600 hover:to-blue-700 transition-all duration-300 transform hover:scale-110">
+                <i data-feather="twitter" class="w-5 h-5 text-white"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Info -->
+          <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/20 shadow-2xl">
+            <h3 class="text-lg font-semibold text-white mb-4">Quick Info</h3>
+            <div class="space-y-3 text-gray-300">
+              <div class="flex items-center space-x-2">
+                <i data-feather="clock" class="w-4 h-4"></i>
+                <span class="text-sm">Response time: 24 hours</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <i data-feather="globe" class="w-4 h-4"></i>
+                <span class="text-sm">Available worldwide</span>
+              </div>
+              <div class="flex items-center space-x-2">
+                <i data-feather="check-circle" class="w-4 h-4"></i>
+                <span class="text-sm">Free consultation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    feather.replace();
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const formData = new FormData(this);
+      const data = Object.fromEntries(formData);
+      const a = document.createElement("a");
+      a.href = `https://mail.google.com/mail/?view=cm&fs=1&to=sass@tender.com&su=${data.subject}(${data.firstName} ${data.lastName})&body=${data.message}`;
+      a.target = "_blank";
+      a.click();
+      this.reset();
+    });
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const cards = document.querySelectorAll('.bg-white\/10');
+      cards.forEach((card, index) => {
+        card.style.opacity = '0';
+        card.style.transform = 'translateY(20px)';
+
+        setTimeout(() => {
+          card.style.transition = 'all 0.6s ease';
+          card.style.opacity = '1';
+          card.style.transform = 'translateY(0)';
+        }, index * 100);
+      });
+    });
+  </script>
+</body></html>
+  
